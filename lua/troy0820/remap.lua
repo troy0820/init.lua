@@ -12,14 +12,6 @@ vim.opt.smartindent = true
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = "180"
 vim.g.rainbow_active = 1
---vim.g.go_gopls_enabled = 1
---vim.g.go_def_mode = 'gopls'
---vim.g.go_info_mode = 'gopls'
---vim.g.go_def_mapping_enabled = 0
---vim.g.go_addtags_transform = "camelcase"
---vim.g.go_fmt_autosave = 1
---vim.g.go_auto_type_info = 1
---vim.g.go_fmt_command = "goimports"
 vim.g.airline_theme='nord_minimal'
 vim.g.leader = " "
 vim.g.mapleader = " "
@@ -43,6 +35,6 @@ vim.keymap.set("n","<leader>y", "\"+Y")
 vim.keymap.set("n","<leader>n", ":cnext<CR>")
 vim.keymap.set("n","<leader>m", ":cprev<CR>")
 
--- Commenting out to see if I like this 
+-- Commenting out to see if I like this
 -- vim.cmd[[hi TreesitterContextBottom cterm=reverse ctermbg=0 guibg=#3b4252 gui=underline]]
 -- vim.cmd[[hi link TreesitterContext Normal]]
