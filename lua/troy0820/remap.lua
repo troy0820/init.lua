@@ -12,7 +12,6 @@ vim.opt.smartindent = true
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = "180"
 vim.g.rainbow_active = 1
-vim.g.airline_theme='nord_minimal'
 vim.g.leader = " "
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>v", ":vsp")
