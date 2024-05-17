@@ -20,6 +20,8 @@ vim.keymap.set("n", "<leader>f", "<C-W>W")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v","<c-k>",":m '<-2<CR>gv=gv")
+vim.keymap.set("n","<leader>t", ":sp term://zsh<cr>")
+vim.keymap.set("t","<ESC>", "<C-\\><C-N>")
 
 vim.keymap.set("n", "<c-k>", ":m .-2<CR>==")
 vim.keymap.set("n","<c-j>", ":m .+1<CR>==")
