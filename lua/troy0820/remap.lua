@@ -27,7 +27,8 @@ vim.keymap.set("n","<leader>rn", function() vim.lsp.buf.rename() end)
 vim.keymap.set("n", "<c-k>", ":m .-2<CR>==")
 vim.keymap.set("n","<c-j>", ":m .+1<CR>==")
 vim.keymap.set("n","<leader><leader>","<c-^>")
-
+vim.keymap.set("n","<leader>k",":cclose<CR>")
+vim.keymap.set("n","<leader>l",":copen<CR>")
 vim.keymap.set("n","n", "nzz")
 vim.keymap.set("n","N", "Nzz")
 
