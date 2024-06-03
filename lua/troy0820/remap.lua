@@ -37,6 +37,7 @@ vim.keymap.set("v","<leader>y", "\"+y")
 vim.keymap.set("n","<leader>y", "\"+Y")
 vim.keymap.set("n","<leader>n", ":cnext<CR>")
 vim.keymap.set("n","<leader>m", ":cprev<CR>")
+vim.cmd[[ab erry if err != nil {}<Left><Cr><Cr><Up><Tab>]]
 
 -- Commenting out to see if I like this
 -- vim.cmd[[hi TreesitterContextBottom cterm=reverse ctermbg=0 guibg=#3b4252 gui=underline]]
