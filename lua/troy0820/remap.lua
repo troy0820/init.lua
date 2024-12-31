@@ -39,7 +39,13 @@ vim.keymap.set("n", "<leader>n", ":cnext<CR>")
 vim.keymap.set("n", "<leader>m", ":cprev<CR>")
 vim.keymap.set("n", "<leader>gr", function() vim.lsp.buf.references() end)
 vim.cmd [[ab erry if err != nil {}<Left><Cr><Cr><Up><Tab>]]
-
+vim.keymap.set("n", "<leader>qd", function()
+    vim.diagnostic.setqflist({
+        open = true,
+        title = "Diagnostics",
+        severity = { min = vim.diagnostic.severity.HINT }
+    })
+end, { desc = "populate quickfix with diagnostics" })
 -- Commenting out to see if I like this
 -- vim.cmd[[hi TreesitterContextBottom cterm=reverse ctermbg=0 guibg=#3b4252 gui=underline]]
 -- vim.cmd[[hi link TreesitterContext Normal]]
