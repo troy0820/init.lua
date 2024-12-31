@@ -1,0 +1,13 @@
+font-family = "SauceCodePro NFM ExtraLight"
+theme = "nord"
+background-opacity = 0.9
+background-blur-radius = 20
+cursor-style-blink = false
+font-size = 18
+keybind = cmd+shift+comma=reload_config
+keybind = cmd+shift+t=toggle_quick_terminal
+macos-icon = custom-style
+macos-icon-ghost-color = FFFF00
+macos-icon-screen-color = 23AA23
+window-padding-x = 20
+window-padding-y = 20
