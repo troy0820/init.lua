@@ -1,0 +1,28 @@
+[user]
+name = "Troy Connor"
+email = "troy0820@users.noreply.github.com"
+
+[colors]
+commit_id = "magenta"
+change_id = "cyan"
+"diff removed" = { fg = "yellow", underline = false }
+"diff added" = {  fg = "cyan", underline = false }
+"diff token" = {underline = false}
+"diff modified" = "magenta"
+[aliases]
+s = ["st"]
+l = ["log"]
+d = ["diff"]
+
+[ui]
+editor = "nvim"
+paginate = "auto"
+diff.format = "git"
+
+[diff.git]
+context = 6
+
+[signing]
+sign-all = true
+backend = "gpg"
+key = "redacted"
