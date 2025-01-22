@@ -13,6 +13,8 @@ change_id = "cyan"
 s = ["st"]
 l = ["log"]
 d = ["diff"]
+signoff = ["--config=ui.editor='/home/troy0820/signoff.sh'", "describe"]
+
 
 [ui]
 editor = "nvim"
@@ -26,3 +28,7 @@ context = 6
 sign-all = true
 backend = "gpg"
 key = "redacted"
+
+[git]
+auto-local-bookmark = true
+push-bookmark-prefix = "troy0820/feat-"
