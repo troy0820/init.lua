@@ -37,6 +37,9 @@ concat(
   "Commit ID: " ++ format_short_id(commit_id) ++ "\n",
   surround("Bookmarks: ", "\n", separate(" ", local_bookmarks, remote_bookmarks)),
   surround("Tags     : ", "\n", tags),
+  if(config("ui.show-cryptographic-signatures").as_boolean(),
+    "Signature: " ++ format_detailed_cryptographic_signature(signature)),
+  "\n",
   "Author   : " ++ format_detailed_signature(author) ++ "\n",
   "Committer: " ++ format_detailed_signature(committer)  ++ "\n",
     indent("    ",
@@ -44,6 +47,7 @@ concat(
   "\n",
 )
 '''
+
 
 [ui]
 editor = "nvim"
