@@ -54,6 +54,7 @@ editor = "nvim"
 paginate = "auto"
 diff.format = "git"
 show-cryptographic-signatures = true
+default-command = "log"
 
 [diff.git]
 context = 6
