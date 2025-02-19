@@ -9,5 +9,6 @@ return {
 config = function()
     vim.g.better_whitespace_enabled = 0
     vim.g.strip_whitespace_on_save = 0
+    vim.g.airline_powerline_fonts = 1
 end
 }
