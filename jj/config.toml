@@ -65,6 +65,8 @@ backend = "gpg"
 key = "redacted"
 
 [git]
-auto-local-bookmark = true
+#auto-local-bookmark = true
 push-bookmark-prefix = "troy0820/feat-"
 
+[remotes.origin]
+auto-track-bookmarks = 'true'
