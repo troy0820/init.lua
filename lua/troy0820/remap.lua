@@ -46,6 +46,7 @@ vim.keymap.set("n", "<leader>qd", function()
         severity = { min = vim.diagnostic.severity.HINT }
     })
 end, { desc = "populate quickfix with diagnostics" })
+vim.keymap.set("n", "<leader>cc", ":CopilotChatOpen<CR>", { desc = "open copilot chat" })
 -- Commenting out to see if I like this
 -- vim.cmd[[hi TreesitterContextBottom cterm=reverse ctermbg=0 guibg=#3b4252 gui=underline]]
 -- vim.cmd[[hi link TreesitterContext Normal]]
