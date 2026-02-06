@@ -29,6 +29,7 @@ coalesce(
 'format_timestamp(timestamp)' = "timestamp.ago()"
 'format_short_signature(signature)' = "signature.email().local()"
 'format_detailed_signature(signature)' = "signature.email().local()"
+'commit_timestamp()' = 'self.author().timestamp()'
 
 builtin_log_detailed = '''
 "\n\n\n" ++
@@ -41,10 +42,12 @@ concat(
     "Signature: " ++ format_detailed_cryptographic_signature(signature)),
   "\n",
   "Author   : " ++ format_detailed_signature(author) ++ "\n",
+  "TimeStamp : " ++ format_timestamp(commit_timestamp()) ++ "\n",
   "Committer: " ++ format_detailed_signature(committer)  ++ "\n",
     indent("    ",
     coalesce(description, label(if(empty, "empty"), description_placeholder) ++ "\n")),
   "\n",
+  "TimeStamp : " ++ format_timestamp(commit_timestamp(commit_id)) ++ "\n",
 )
 '''
 
