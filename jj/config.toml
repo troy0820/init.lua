@@ -47,7 +47,6 @@ concat(
     indent("    ",
     coalesce(description, label(if(empty, "empty"), description_placeholder) ++ "\n")),
   "\n",
-  "TimeStamp : " ++ format_timestamp(commit_timestamp(commit_id)) ++ "\n",
 )
 '''
 
