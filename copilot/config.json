@@ -1,0 +1,22 @@
+{
+  "banner": "always",
+  "last_logged_in_user": {
+    "host": "https://github.com",
+    "login": "troy0820"
+  },
+  "logged_in_users": [
+    {
+      "host": "https://github.com",
+      "login": "troy0820"
+    }
+  ],
+  "render_markdown": true,
+  "theme": "auto",
+  "staff": true,
+  "log_level": "all",
+  "trusted_folders": [
+    "/Users/troyconnor/workspace/dns-verifier",
+    "/Users/troyconnor/workspace/rust-librar"
+  ],
+  "streamer_mode": false
+}
